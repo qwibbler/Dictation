@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @dict_list %>
+
+<div>
+  <%= link_to "Edit this dict list", edit_dict_list_path(@dict_list) %> |
+  <%= link_to "Back to dict lists", dict_lists_path %>
+
+  <%= button_to "Destroy this dict list", @dict_list, method: :delete %>
+</div>

@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Dict lists</h1>
+
+<div id="dict_lists">
+  <% @dict_lists.each do |dict_list| %>
+    <%= render dict_list %>
+    <p>
+      <%= link_to "Show this dict list", dict_list %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New dict list", new_dict_list_path %>

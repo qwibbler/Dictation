@@ -1,0 +1,2 @@
+class DictList < ApplicationRecord
+end
