@@ -15,6 +15,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_18_165809) do
   enable_extension "plpgsql"
 
   create_table "dict_lists", force: :cascade do |t|
+    t.string "name", default: "Dictation List", null: false
     t.string "list", default: [], array: true
     t.bigint "user_id"
     t.bigint "grade_id"
@@ -41,8 +42,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_18_165809) do
 
   create_table "users", force: :cascade do |t|
     t.string "name", null: false
-    t.string "type", default: "student", null: false
-    t.string "grade"
+    t.string "role", default: "student", null: false
     t.string "email", null: false
     t.string "encrypted_password", null: false
     t.string "reset_password_token"

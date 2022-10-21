@@ -12,6 +12,19 @@
   <% end %>
 
   <div>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :list %>
+    <%= form.text_area :list %>
+  </div>
+
+  <div>
+  </div>
+
+    <%= hidden_field_tag "user_id", @user.id %>
     <%= form.submit %>
   </div>
 <% end %>
