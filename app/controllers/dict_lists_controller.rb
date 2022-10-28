@@ -65,6 +65,6 @@ class DictListsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def dict_list_params
-      params.fetch(:dict_list, {})
+      params.fetch(:dict_list, {:name, list: [], :user_id, :grade_id})
     end
 end

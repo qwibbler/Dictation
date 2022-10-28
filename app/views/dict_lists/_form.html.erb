@@ -18,13 +18,20 @@
 
   <div>
     <%= form.label :list %>
-    <%= form.text_area :list %>
+    <%= form.text_field :list %>
+    <%= form.text_field :list %>
+    <%= form.text_field :list %>
+    <%= form.text_field :list %>
+    <%= form.text_field :list %>
+    <%= form.text_field :list %>
+    <%= form.text_field :list %>
   </div>
 
   <div>
   </div>
-
-    <%= hidden_field_tag "user_id", @user.id %>
+    <%= hidden_field_tag "user_id", 1 %>
+    <%= hidden_field_tag "grade_id", 1 %>
+    <%# hidden_field_tag "user_id", @user.id %>
     <%= form.submit %>
   </div>
 <% end %>
